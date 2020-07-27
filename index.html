@@ -15,23 +15,28 @@
 
         <a class="navbar-brand" href="index.html"> <img src="Images/logo/logo.png"></a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav ml-auto mt-1 text-right" id="navbarcollapse">
 
-            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Wish List"> <i class="fa fa-heart fa-lg" aria-hidden="true"></i></a>
-            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Cart"> <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> </a>
-            <a class="nav-item nav-link mx-2" href="index.html">Login </a>
+            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Wish List">
+               <i class="fa fa-heart fa-lg" aria-hidden="true"></i>
+            </a>
+            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Cart">
+               <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+            </a>
+            <a class="nav-item nav-link mx-2" href="#" data-toggle="popover" data-placement="bottom" title="Login" data-content="Sign In or Register">
+                <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login 
+            </a>
 
           </div>
        
         </div>
-
-
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       </nav> <!-- Navbar End -->
 
@@ -64,6 +69,10 @@
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip(); 
     });
+
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
 </script>
 </body>
 </html>
