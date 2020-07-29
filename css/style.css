@@ -36,8 +36,15 @@ footer {
   }
 }
 
+@media (max-width: 576px) {
+  #cards-row .card {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
 #content-jumbotron {
-  background: url("/Images/designerimg.png");
+  background-image: url("/Images/designerimg.png");
   background-size: cover;
 }
 
