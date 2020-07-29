@@ -8,7 +8,7 @@ html {
     display: none !important;
   }
   html .tooltip {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #f1f1f1;
 }
 
 footer {
@@ -33,6 +34,11 @@ footer {
   #navbarcollapse {
     flex-direction: column-reverse;
   }
+}
+
+#content-jumbotron {
+  background: url("/Images/designerimg.png");
+  background-size: cover;
 }
 
 #footerlogo {
