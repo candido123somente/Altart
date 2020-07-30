@@ -24,13 +24,13 @@
           
           <div class="navbar-nav ml-auto mt-1 text-right" id="navbarcollapse">
 
-            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Wish List">
+            <a class="nav-item nav-link mx-2" id="favorites-button">
                <i class="fa fa-heart fa-lg" aria-hidden="true"></i>
             </a>
-            <a class="nav-item nav-link mx-2" href="#" data-toggle="tooltip" data-placement="top" title="Cart">
+            <a class="nav-item nav-link mx-2" id="cart-button">
                <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
             </a>
-            <a class="nav-item nav-link mx-2" href="#" data-toggle="popover" data-placement="bottom" title="Login" data-content="Sign In or Register">
+            <a class="nav-item nav-link mx-2" id="login-button">
                 <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login 
             </a>
 
@@ -188,14 +188,7 @@
  <!-- Scripts -->
  <script src="node_modules/jquery/dist/jquery.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
- <script type="text/javascript">
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip(); 
-    });
-
-    $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>
+ <script src="scripts/functions.js" charset="utf-8"></script>
+<!-- Scripts end -->
 </body>
 </html>

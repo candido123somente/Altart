@@ -30,6 +30,10 @@ footer {
   background-color: #D0011B;
 }
 
+#navbar a {
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
   #navbarcollapse {
     flex-direction: column-reverse;
