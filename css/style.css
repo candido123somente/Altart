@@ -34,9 +34,16 @@ footer {
   cursor: pointer;
 }
 
+@media (min-width: 576px) {
+  #navbarcollapse {
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 576px) {
   #navbarcollapse {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    text-align: right;
   }
 }
 
