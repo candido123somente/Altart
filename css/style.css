@@ -57,6 +57,8 @@ footer {
 #content-jumbotron {
   background-image: url("/Images/designerimg.png");
   background-size: cover;
+  color: #FFFF00;
+  text-shadow: 2px 2px 2px #111111;
 }
 
 #footerlogo {

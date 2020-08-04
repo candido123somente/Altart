@@ -44,18 +44,24 @@
         toggle: "tooltip",
         placement: "bottom",
         title: "Sign In",
-        trigger: "hover",
+        trigger: "hover"
+
       }).popover({
+        html: true,
         content: "Sign In or Register",
         title: "Login",
-        placement: "bottom",
+        placement: "bottom"
+
       }).on('show.bs.popover', function () {
         $(this).tooltip('hide'),
           $(this).tooltip('disable'),
           $('#cart-button').popover('hide'),
           $('#favorites-button').popover('hide')
+
       }).on('hide.bs.popover', function () {
         $(this).tooltip('enable')
+
       });
+
 
     });
