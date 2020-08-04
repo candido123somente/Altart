@@ -58,7 +58,20 @@ footer {
   background-image: url("/Images/designerimg.png");
   background-size: cover;
   color: #FFFF00;
-  text-shadow: 2px 2px 2px #111111;
+  text-shadow: 2px 2px 3px #111111;
+  cursor: default;
+}
+
+#content-jumbotron .lead {
+  text-shadow: 1px 1px 1px #111111;
+}
+
+#content-jumbotron .btn {
+  background-color: #FFFF00;
+  color: #111111;
+  box-shadow: 1px 1px 10px #111111;
+  opacity: 0.9;
+  margin-left: auto;
 }
 
 #footerlogo {
