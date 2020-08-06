@@ -107,6 +107,10 @@ footer {
 }
 
 .popover-login {
+  position: absolute;
+  z-index: 99;
+  right: 50%;
+  transform: translate(50%);
   width: 330px;
   height: 470px;
   background: #fcfcfc;
@@ -162,4 +166,57 @@ footer {
   position: absolute;
   top: 203px;
   right: 33px;
+}
+
+#subscribe-modal .modal-body {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#subscribe-modal h5 {
+  color: #111111;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+#subscribe-modal select:hover {
+  cursor: pointer;
+}
+
+#subscribe-modal .form-control {
+  border: hidden;
+  border-bottom: solid 1.5px #c4c4c4;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+#subscribe-modal .form-control:focus {
+  box-shadow: none;
+  border-color: #D0011B;
+}
+
+#subscribe-modal .form-check-input:hover {
+  cursor: pointer;
+}
+
+#subscribe-modal .btn:focus {
+  box-shadow: none;
+}
+
+#subscribe-modal #signup-button {
+  display: block;
+  width: 30vw;
+  background-color: #e9011e;
+  color: #ffffff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#subscribe-modal #signup-button:hover {
+  color: #ffffff;
+  background-color: #fe203c;
 }

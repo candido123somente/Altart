@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
 //    TOOLTIPS
   $('#favorites-button').tooltip({
     toggle: "tooltip",
@@ -23,7 +22,6 @@ $(document).ready(function () {
     trigger: "hover"
   });
   // TOOLTIPS
-
 
   // LOGIN PASSWORD SHOW/HIDE
   $(".toggle-password").hover(function() {
