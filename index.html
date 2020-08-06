@@ -13,8 +13,8 @@
 
 <body>
 
+  <!-- Navbar Start -->
   <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
-    <!-- Navbar Start -->
 
     <a class="navbar-brand" href="index.html"> <img src="Images/logo/logo.png"></a>
 
@@ -38,23 +38,22 @@
           <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login
         </a>
 
+        <!-- Login popover Start-->
         <div class="popover popover-login">
-          <div class="arrow"></div>
-          <div class="popover-content">
-            <form class="px-4">
-              <h3 class="text-center">Login</h3>
-              <div class="form-group">
-                <input type="e-mail" class="form-control" id="user-input" placeholder="E-mail">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="password-input" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-block">Login</button>
-              <small class="form-text text-center">Don't have account? <a>Sign Up</a> </small>
-            </form>
-          </div>
-        </div>
-
+          <form class="px-4">
+            <h3 class="text-center">Login</h3>
+            <div class="form-group">
+              <input type="e-mail" class="form-control" id="user-input" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password-input" placeholder="Password">
+              <span toggle="#password-input" class="fa fa-eye toggle-password" id="eye-icon"></span>
+            </div>
+            <button type="submit" class="btn btn-block">Login</button>
+            <small class="form-text text-center">Don't have account? <a>Sign Up</a> </small>
+          </form>
+        </div>  <!-- Login popover End -->
+       
 
 
       </div>
@@ -63,8 +62,8 @@
 
   </nav> <!-- Navbar End -->
 
+  <!-- Carousel Start -->
   <div id="carouselIndicators" class="carousel slide " data-ride="carousel">
-    <!-- Carousel Start -->
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -92,12 +91,12 @@
   </div> <!-- Carousel End -->
 
 
+  <!-- Content Container Start-->
   <div class="container py-3">
-    <!-- Content Container Start-->
 
 
+    <!-- 1st Cards Row -->
     <div class="row mb-3" id="cards-row">
-      <!-- 1st Cards Row -->
 
       <div class="col-sm-3">
         <div class="card">
@@ -151,8 +150,8 @@
       <button type="button" class="btn btn-lg mt-3 d-block mx-auto" href="#">Start now</button>
     </div> <!-- Jumbotron End -->
 
+    <!-- 2nd Cards Row -->
     <div class="row mb-3" id="cards-row">
-      <!-- 2nd Cards Row -->
 
       <div class="col-sm-3">
         <div class="card">
@@ -199,8 +198,8 @@
   </div> <!-- Content Container End -->
 
 
-  <footer>
-    <!-- Footer Start -->
+  <footer>    <!-- Footer Start -->
+ 
 
     <div class="container text-center">
       <div class="conainer" id="footerlogo">
