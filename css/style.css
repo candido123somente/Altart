@@ -4,9 +4,6 @@ html {
 }
 
 @media (max-width: 576px) {
-  html .popover {
-    display: none !important;
-  }
   html .tooltip {
     display: none !important;
   }
@@ -47,6 +44,68 @@ footer {
   }
 }
 
+@media (max-width: 576px) {
+  #cards-row .card {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+#content-jumbotron {
+  color: white;
+  cursor: default;
+}
+
+@media (min-width: 576px) {
+  #content-jumbotron {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+#content-jumbotron .display-4 {
+  text-shadow: 2px 2px 3px #111111;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+#content-jumbotron .lead {
+  text-shadow: 2px 2px 1px #111111;
+  font-size: 1.3em;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+#content-jumbotron .btn {
+  background-color: #e9011e;
+  text-shadow: 1px 1px 2px #111111;
+  color: #ffffff;
+  box-shadow: 0.5px 0.5px 5px #111111;
+  opacity: 1;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+#content-jumbotron .btn:hover {
+  background-color: #fe203c;
+}
+
+#content-jumbotron .jumbotron {
+  background-color: none;
+}
+
+.jumbotron-with-background {
+  background-image: url("../Images/designerimg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footerlogo {
+  padding: 1em;
+  border-bottom: solid 1px #ffffff;
+}
+
 .popover-login {
   width: 330px;
   height: 470px;
@@ -61,29 +120,31 @@ footer {
 }
 
 .popover-login input {
-  border: none;
+  border: hidden;
   border-bottom: solid 1.5px #c4c4c4;
   border-radius: 0px;
   box-shadow: none;
 }
 
-.popover-login #eye-icon {
-  font-size: 1.2rem;
-  color: #929292;
-  opacity: 0.6;
-  position: absolute;
-  top: 203px;
-  right: 33px;
+.popover-login .form-control:focus {
+  box-shadow: none;
+  border-color: #D0011B;
 }
 
 .popover-login button {
-  background-color: #D0011B;
+  background-color: #e9011e;
   color: #ffffff;
+  text-shadow: 1.2px 1.2px 2px #111111;
   font-size: 0.9em;
   padding: 10px;
   border-radius: 2px;
   margin-top: 30px;
   font-weight: bold;
+}
+
+.popover-login .btn:hover {
+  color: #ffffff;
+  background-color: #fe0625;
 }
 
 .popover-login small {
@@ -94,38 +155,11 @@ footer {
   color: blue;
 }
 
-@media (max-width: 576px) {
-  #cards-row .card {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-}
-
-#content-jumbotron {
-  background-image: url("/Images/designerimg.png");
-  background-size: cover;
-  color: #FFFF00;
-  text-shadow: 2px 2px 3px #111111;
-  cursor: default;
-}
-
-#content-jumbotron .lead {
-  text-shadow: 1px 1px 1px #111111;
-}
-
-#content-jumbotron .btn {
-  background-color: #FFFF00;
-  color: #111111;
-  box-shadow: 1px 1px 10px #111111;
-  opacity: 0.9;
-  margin-left: auto;
-}
-
-#content-jumbotron .btn :hover {
-  color: rebeccapurple;
-}
-
-#footerlogo {
-  padding: 1em;
-  border-bottom: solid 1px #ffffff;
+.popover-login #eye-icon {
+  font-size: 1.2rem;
+  color: #929292;
+  opacity: 0.6;
+  position: absolute;
+  top: 203px;
+  right: 33px;
 }
