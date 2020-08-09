@@ -168,9 +168,27 @@ footer {
   right: 33px;
 }
 
+#subscribe-modal .modal-header {
+  padding: 0;
+}
+
+#subscribe-modal img.modal-title {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%);
+}
+
+#subscribe-modal button.close {
+  margin: auto 0.3rem auto auto;
+}
+
+#subscribe-modal button.close:focus {
+  outline: none;
+}
+
 #subscribe-modal .modal-body {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 1rem 2.5rem;
 }
 
 #subscribe-modal h5 {
@@ -195,8 +213,19 @@ footer {
   border-color: #D0011B;
 }
 
+#subscribe-modal #date-txt-modal {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-left: 2%;
+}
+
 #subscribe-modal .form-check-input:hover {
   cursor: pointer;
+}
+
+#subscribe-modal a {
+  color: #4f4fff;
+  font-weight: bold;
 }
 
 #subscribe-modal .btn:focus {
@@ -205,14 +234,15 @@ footer {
 
 #subscribe-modal #signup-button {
   display: block;
-  width: 30vw;
+  width: 70%;
   background-color: #e9011e;
+  border: none;
   color: #ffffff;
   font-size: 1em;
   letter-spacing: 1px;
-  padding: 10px;
+  padding: 0.6em;
   border-radius: 4px;
-  margin-top: 30px;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
