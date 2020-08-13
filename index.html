@@ -34,26 +34,38 @@
         <a class="nav-item nav-link mx-2" id="cart-button">
           <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
         </a>
-        <a class="nav-item nav-link mx-2" id="login-button">
-          <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login
+        <a class="nav-item nav-link mx-2" id="login-button" data-toggle="modal" data-target="#login-modal">
+          <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>
+          Login
         </a>
 
-        <!-- Login popover Start-->
-        <div class="popover-login">
-          <form class="px-4">
-            <h3 class="text-center">Login</h3>
-            <div class="form-group">
-              <input type="text" class="form-control" id="user-input" placeholder="Email">
+
+        <!-- Popover Modal Start -->
+        <div class="modal fade" id="login-modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Login popover Start-->
+                <div class="popover-login">
+                  <form class="px-4">
+                    <h3 class="text-center">Login</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="user-input" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="password-input" placeholder="Password">
+                      <span toggle="#password-input" class="fa fa-eye toggle-password" id="eye-icon"></span>
+                    </div>
+                    <button type="submit" class="btn btn-block">Login</button>
+                    <small class="form-text text-center">Don't have account? <a data-toggle="modal"
+                        data-target="#subscribe-modal">Sign Up</a> </small>
+                  </form>
+
+                </div> <!-- Login popover End -->
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="password-input" placeholder="Password">
-              <span toggle="#password-input" class="fa fa-eye toggle-password" id="eye-icon"></span>
-            </div>
-            <button type="submit" class="btn btn-block">Login</button>
-            <small class="form-text text-center">Don't have account? <a data-toggle="modal"
-                data-target="#subscribe-modal">Sign Up</a> </small>
-          </form>
-        </div> <!-- Login popover End -->
+          </div>
+        </div>
+
+        <!-- Login Modal End -->
 
         <!-- Subscribe Modal Start -->
         <div class="modal fade" id="subscribe-modal" tabindex="-1">
