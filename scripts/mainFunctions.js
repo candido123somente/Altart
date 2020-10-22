@@ -18,7 +18,7 @@ $(document).ready(function () {
   $('#login-button').tooltip({
     toggle: "tooltip",
     placement: "bottom",
-    title: "Sign In",
+    title: "Login",
     trigger: "hover"
   });
   // TOOLTIPS

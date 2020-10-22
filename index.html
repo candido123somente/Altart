@@ -14,7 +14,7 @@
 <body>
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+  <nav class="navbar navbar-expand-sm navbar-dark p-1" id="navbar">
 
     <a class="navbar-brand" href="index.html"> <img src="Images/logo/logo.png"></a>
 
@@ -26,18 +26,19 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapsed">
 
-      <div class="navbar-nav mt-1" id="navbarcollapse">
+      <div class="navbar-nav" id="navbarcollapse">
 
-        <a class="nav-item nav-link mx-2" id="favorites-button">
+        <a class="nav-item nav-link mx-2 py-3" id="favorites-button">
           <i class="fa fa-heart fa-lg" aria-hidden="true"></i>
         </a>
-        <a class="nav-item nav-link mx-2" id="cart-button">
+        <a class="nav-item nav-link mx-2 py-3" id="cart-button">
           <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
         </a>
-        <a class="nav-item nav-link mx-2" id="login-button" data-toggle="modal" data-target="#login-modal">
-          <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>
-          Login
-        </a>
+        <div class="nav-item nav-link mx-2" id="login-button" >
+          <a data-toggle="modal" data-target="#login-modal">Sign in</a> 
+          <p>or</p> 
+          <a href="#" class="text-reset text-decoration-none">Sign up</a>
+        </div>
 
 
         <!-- Popover Modal Start -->
