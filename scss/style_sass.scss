@@ -1,0 +1,275 @@
+$main-color: #D0011B;
+$second-color: #FF9F00;
+$third-color: #440000;
+$mobile-size: 576px;
+$button-color: lighten($main-color, 5);
+
+html {
+    height: 100%;
+    min-height: 100%;
+
+    @media (max-width: #{$mobile-size}) {
+        .tooltip {
+            display: none !important;
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f1f1f1;
+}
+
+footer {
+    padding: 0px;
+    margin-top: auto;
+    background-color: $main-color;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+         &:hover {   
+            text-decoration: none;
+            color: darken(#fff, 10);
+        }
+    }
+}
+
+#footerlogo {
+    padding: 1em;
+    border-bottom: solid 1px #ffffff;
+}
+
+#navbar {
+    background-color: $main-color;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+#navbarcollapse {
+    @media(min-width: #{$mobile-size}) {
+        margin-left: auto;
+    }
+
+    @media(max-width: #{$mobile-size}) {
+        flex-direction: row;
+        text-align: right;
+
+    }
+}
+
+#cards-row {
+    @media(max-width: #{$mobile-size}) {
+        .card {
+            margin-top: (1em/2);
+            margin-bottom: (1em/2);
+        }
+    }
+}
+
+#content-jumbotron {
+    color: white;
+    cursor: default;
+
+    @media (min-width: $mobile-size) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .display-4 {
+        text-shadow: 2px 2px 3px #111111;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+    .lead {
+        text-shadow: 2px 2px 1px #111111;
+        font-size: 1.3em;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+
+    .btn {
+        background-color: $button-color;
+        text-shadow: 1px 1px 2px #111111;
+        color: #ffffff;
+        box-shadow: 0.5px 0.5px 5px #111111;
+        opacity: 1;
+        margin-left: auto;
+        font-weight: 600;
+
+        &:hover {
+            background-color: lighten($button-color, 10);
+        }
+    }
+
+    .jumbotron {
+        background-color: none;
+    }
+
+}
+
+.jumbotron-with-background {
+    background-image: url("../Images/designerimg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popover-login {
+    position: absolute;
+    z-index: 99;
+    right: 50%;
+    transform: translate(50%);
+    width: 330px;
+    height: 470px;
+    background: #fcfcfc;
+    border-radius: 10px;
+
+    h3 {
+        color: #111111;
+        margin-top: 55px;
+        margin-bottom: 50px;
+    }
+
+    input {
+        border: hidden;
+        border-bottom: solid 1.5px #c4c4c4;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #{$main-color};
+    }
+
+    button {
+        background-color: $button-color;
+        color: #ffffff;
+        text-shadow: 1.2px 1.2px 2px #111111;
+        font-size: 0.9em;
+        padding: 10px;
+        border-radius: 2px;
+        margin-top: 30px;
+        font-weight: bold;
+
+    }
+
+    .btn:hover {
+        color: #ffffff;
+        background-color: lighten($button-color, 5);
+    }
+
+    small {
+        margin-top: 50px;
+
+        a {
+            color: blue;
+        }
+    }
+
+    #eye-icon {
+        font-size: 1.2rem;
+        color: #929292;
+        opacity: 0.6;
+        position: absolute;
+        top: 203px;
+        right: 33px;
+    }
+}
+
+#subscribe-modal {
+    .modal-header {
+        padding: 0;
+    }
+
+    img.modal-title {
+        position: absolute;
+        left: 50%;
+        top: 2%;
+        transform: translate(-50%);
+    }
+
+    button.close {
+        margin: auto 0.3rem auto auto;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .modal-body {
+        padding: 1rem 2.5rem;
+    }
+
+    h5 {
+        color: #111111;
+        font-size: 1.1em;
+        font-weight: 800;
+    }
+
+    select:hover {
+        cursor: pointer;
+    }
+
+    .form-control {
+        border: hidden;
+        border-bottom: solid 1.5px #c4c4c4;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #{$main-color};
+    }
+
+    #date-txt-modal {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-left: 2%;
+    }
+
+    .form-check-input:hover {
+        cursor: pointer;
+    }
+
+    a {
+        color: rgb(79, 79, 255);
+        font-weight: bold;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    #signup-button {
+        display: block;
+        width: 70%;
+        background-color: $button-color;
+        border: none;
+        color: #ffffff;
+        font-size: 1em;
+        letter-spacing: 1px;
+        padding: 0.6em;
+        border-radius: 4px;
+        margin-top: 2rem;
+        font-weight: bold;
+
+        &:hover {
+            color: #ffffff;
+            background-color: lighten($button-color, 10);
+        }
+    }
+}
+
+#login-modal {
+    .modal-content {
+        border: none;
+    }
+}
