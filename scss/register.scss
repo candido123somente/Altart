@@ -1,28 +1,17 @@
 @import url("style_sass.scss");
 
+$main-color: #D0011B;
+$second-color: #FF9F00;
+$third-color: #440000;
+$mobile-size: 576px;
+$button-color: lighten($main-color, 5);
 
-#subscribe-modal {
-    .modal-header {
-        padding: 0;
-    }
 
-    img.modal-title {
-        position: absolute;
-        left: 50%;
-        top: 2%;
-        transform: translate(-50%);
-    }
-
-    button.close {
-        margin: auto 0.3rem auto auto;
-        &:focus{
-            outline: none;
-        }
-    }
-
-    .modal-body {
-        padding: 1rem 2.5rem;
-    }
+#content {
+    width: 50vw;
+    padding: 1rem 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
 
     h5 {
         color: #111111;
@@ -46,7 +35,7 @@
         border-color: #{$main-color};
     }
 
-    #date-txt-modal {
+    #date-txt {
         font-size: 1.05rem;
         font-weight: 700;
         margin-left: 2%;
