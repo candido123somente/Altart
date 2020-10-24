@@ -14,15 +14,6 @@ $(document).ready(function () {
     title: "Cart",
     trigger: "hover",
   });
-
-  $('#login-button').tooltip({
-    toggle: "tooltip",
-    placement: "bottom",
-    title: "Login",
-    trigger: "hover"
-  });
-  // TOOLTIPS
-
   // LOGIN PASSWORD SHOW/HIDE
   $(".toggle-password").hover(function() {
 
