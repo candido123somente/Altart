@@ -14,15 +14,23 @@
 <body>
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-sm navbar-dark p-1" id="navbar">
+  <nav class="navbar navbar-expand-sm navbar-dark p-1 px-3" id="navbar">
 
     <a class="navbar-brand" href="index.html"> <img src="Images/logo/logo.png"></a>
+    
+    <form class="form-inline mx-auto">
+      <input class="form-control form-control-sm bg-light pl-3 pr-4 border-0" type="text" placeholder="Search..."
+      id="formSearch">
+
+      <button class="btn btn-sm bg-light rounded-circle" type="submit" id="formSearchButton">
+        <i class="fa fa-search text-dark"></i>
+      </button>
+  </form>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsed"
       aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
 
     <div class="collapse navbar-collapse" id="navbar-collapsed">
 
