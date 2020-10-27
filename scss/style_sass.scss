@@ -45,7 +45,6 @@ footer {
 
 #navbar {
     background-color: $main-color;
-
     a {
         cursor: pointer;
     }
@@ -59,17 +58,28 @@ footer {
     @media(max-width: #{$mobile-size}) {
         flex-direction: row;
         text-align: right;
-
     }
 }
 
+#navbar-collapsed {
+    max-width: 220px;
+}
+
 #formSearch {
+    @media(max-width: #{$mobile-size}) {
+        width: 30vw;
+    }
+
     border-radius: 20px;
-    width: 30vw;    
+    min-width: 100px;
+    width: 10vw;    
     max-width: 250px;
+    transition: 700ms;
 
    &:focus {
     box-shadow: none;
+    width: 30vw;
+    transition: 700ms;
    }
 }
 
