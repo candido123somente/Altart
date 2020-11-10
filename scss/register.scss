@@ -3,19 +3,16 @@
 $main-color: #D0011B;
 $second-color: #FF9F00;
 $third-color: #440000;
+$link-color: rgb(79, 79, 255);
 $mobile-size: 576px;
 $button-color: lighten($main-color, 5);
 
 
 #content {
-    width: 50vw;
-    padding: 1rem 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
 
     h5 {
         color: #111111;
-        font-size: 1.1em;
+        font-size: 1.4rem;
         font-weight: 800;
     }
 
@@ -23,11 +20,32 @@ $button-color: lighten($main-color, 5);
         cursor: pointer;
     }
 
+    #register-form{ 
+        width: 50%;
+        min-width: 350px;
+        padding: 1rem 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .form-control {
         border: hidden;
         border-bottom: solid 1.5px #c4c4c4;
         border-radius: 0px;
         box-shadow: none;
+    }
+    
+    .logo {
+        background-color: $main-color;
+
+        .fa {
+            color: #fff;
+            font-size: 2rem;
+
+            &:hover{
+                color: darken(#fff, 10);
+            }   
+        }
     }
 
     .form-control:focus {
@@ -46,8 +64,12 @@ $button-color: lighten($main-color, 5);
     }
 
     a {
-        color: rgb(79, 79, 255);
+        color: $link-color;
         font-weight: bold;
+        &:hover {
+            text-decoration: none;
+            color: lighten($link-color, 8);
+        }
     }
 
     .btn:focus {
@@ -72,4 +94,7 @@ $button-color: lighten($main-color, 5);
             background-color: lighten($button-color, 10);
         }
     }
+
 }
+
+
